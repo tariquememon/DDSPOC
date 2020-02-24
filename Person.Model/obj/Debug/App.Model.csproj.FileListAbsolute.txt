@@ -1,0 +1,6 @@
+C:\Development\Training\DisconnectedDSPOC\Person.Model\bin\Debug\Person.Model.dll
+C:\Development\Training\DisconnectedDSPOC\Person.Model\bin\Debug\Person.Model.pdb
+C:\Development\Training\DisconnectedDSPOC\Person.Model\obj\Debug\App.Model.csprojAssemblyReference.cache
+C:\Development\Training\DisconnectedDSPOC\Person.Model\obj\Debug\App.Model.csproj.CoreCompileInputs.cache
+C:\Development\Training\DisconnectedDSPOC\Person.Model\obj\Debug\Person.Model.dll
+C:\Development\Training\DisconnectedDSPOC\Person.Model\obj\Debug\Person.Model.pdb
