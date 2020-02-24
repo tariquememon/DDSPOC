@@ -2,11 +2,9 @@ C:\Development\Training\DisconnectedDSPOC\WPF.UI\bin\Debug\WPF.UI.exe.config
 C:\Development\Training\DisconnectedDSPOC\WPF.UI\bin\Debug\WPF.UI.exe
 C:\Development\Training\DisconnectedDSPOC\WPF.UI\bin\Debug\WPF.UI.pdb
 C:\Development\Training\DisconnectedDSPOC\WPF.UI\obj\Debug\App.UI.csprojAssemblyReference.cache
-C:\Development\Training\DisconnectedDSPOC\WPF.UI\obj\Debug\MainWindow.g.cs
 C:\Development\Training\DisconnectedDSPOC\WPF.UI\obj\Debug\App.g.cs
 C:\Development\Training\DisconnectedDSPOC\WPF.UI\obj\Debug\WPF.UI_MarkupCompile.cache
 C:\Development\Training\DisconnectedDSPOC\WPF.UI\obj\Debug\WPF.UI_MarkupCompile.lref
-C:\Development\Training\DisconnectedDSPOC\WPF.UI\obj\Debug\MainWindow.baml
 C:\Development\Training\DisconnectedDSPOC\WPF.UI\obj\Debug\WPF.UI.g.resources
 C:\Development\Training\DisconnectedDSPOC\WPF.UI\obj\Debug\WPF.UI.Properties.Resources.resources
 C:\Development\Training\DisconnectedDSPOC\WPF.UI\obj\Debug\App.UI.csproj.GenerateResource.cache
@@ -16,3 +14,5 @@ C:\Development\Training\DisconnectedDSPOC\WPF.UI\obj\Debug\WPF.UI.pdb
 C:\Development\Training\DisconnectedDSPOC\WPF.UI\bin\Debug\Person.Model.dll
 C:\Development\Training\DisconnectedDSPOC\WPF.UI\bin\Debug\Person.Model.pdb
 C:\Development\Training\DisconnectedDSPOC\WPF.UI\obj\Debug\App.UI.csproj.CopyComplete
+C:\Development\Training\DisconnectedDSPOC\WPF.UI\obj\Debug\View\MainWindow.g.cs
+C:\Development\Training\DisconnectedDSPOC\WPF.UI\obj\Debug\View\MainWindow.baml
