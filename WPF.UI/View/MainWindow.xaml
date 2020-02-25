@@ -5,8 +5,51 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WPF.UI"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="POC - Disconnected Data Source" Height="600" Width="800" FontSize="20">
     <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="200"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
         
+        <ListView ItemsSource="{Binding People}" Grid.Column="0"
+              SelectedItem="{Binding SelectedPerson, Mode=TwoWay}"
+              DisplayMemberPath="Name"/>
+
+        <Grid Grid.Column="1">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+
+            <Label Content="Name" Margin="10 10 10 0" Grid.Row="0"/>
+            <TextBox Grid.Row="1" Text="{Binding SelectedPerson.Name, 
+                Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" Margin="10 0 10 10"/>
+            
+            <Label Content="Street Number" Margin="10 10 10 0" Grid.Row="2"/>
+            <TextBox Grid.Row="3" Text="{Binding SelectedPerson.Address.StreetNo, 
+                Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" Margin="10 0 10 10"/>
+            
+            <Label Content="Street Name" Margin="10 10 10 0" Grid.Row="4"/>
+            <TextBox Grid.Row="5" Text="{Binding SelectedPerson.Address.StreetName, 
+                Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" Margin="10 0 10 10"/>
+            
+            <Label Content="State" Margin="10 10 10 0" Grid.Row="6"/>
+            <TextBox Grid.Row="7" Text="{Binding SelectedPerson.Address.State, 
+                Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" Margin="10 0 10 10"/>
+            
+            <Label Content="Post Code" Margin="10 10 10 0" Grid.Row="8"/>
+            <TextBox Grid.Row="9" Text="{Binding SelectedPerson.Address.PostCode, 
+                Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" Margin="10 0 10 10"/>
+        </Grid>
     </Grid>
 </Window>

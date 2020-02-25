@@ -1,0 +1,17 @@
+C:\Development\Training\DisconnectedDSPOC\App.Data\bin\Debug\App.Data.dll.config
+C:\Development\Training\DisconnectedDSPOC\App.Data\bin\Debug\App.Data.dll
+C:\Development\Training\DisconnectedDSPOC\App.Data\bin\Debug\App.Data.pdb
+C:\Development\Training\DisconnectedDSPOC\App.Data\bin\Debug\EntityFramework.dll
+C:\Development\Training\DisconnectedDSPOC\App.Data\bin\Debug\EntityFramework.SqlServer.dll
+C:\Development\Training\DisconnectedDSPOC\App.Data\bin\Debug\Person.Model.dll
+C:\Development\Training\DisconnectedDSPOC\App.Data\bin\Debug\Person.Model.pdb
+C:\Development\Training\DisconnectedDSPOC\App.Data\bin\Debug\EntityFramework.xml
+C:\Development\Training\DisconnectedDSPOC\App.Data\bin\Debug\EntityFramework.SqlServer.xml
+C:\Development\Training\DisconnectedDSPOC\App.Data\obj\Debug\App.DataAccess.csprojAssemblyReference.cache
+C:\Development\Training\DisconnectedDSPOC\App.Data\obj\Debug\App.DataAccess.csproj.CoreCompileInputs.cache
+C:\Development\Training\DisconnectedDSPOC\App.Data\obj\Debug\App.DataAccess.csproj.CopyComplete
+C:\Development\Training\DisconnectedDSPOC\App.Data\obj\Debug\App.Data.dll
+C:\Development\Training\DisconnectedDSPOC\App.Data\obj\Debug\App.Data.pdb
+C:\Development\Training\DisconnectedDSPOC\App.Data\obj\Debug\App.Data.Migrations.InitialDatabase.resources
+C:\Development\Training\DisconnectedDSPOC\App.Data\obj\Debug\App.DataAccess.csproj.GenerateResource.cache
+C:\Development\Training\DisconnectedDSPOC\App.Data\obj\Debug\App.Data.Migrations.InitialDatabase1.resources

@@ -48,6 +48,38 @@ namespace WPF.UI.Wrapper.Tests
         }
 
         [TestMethod()]
+        [ExpectedException(typeof(ArgumentException))]
+        public void ShouldThrowArgumentExceptionIfAddressIsNull()
+        {
+            try
+            {
+                _person.Address = null;
+                var wrapper = new PersonWrapper(_person);
+            }
+            catch (ArgumentNullException ex)
+            {
+                Assert.AreEqual("Address cannot be null", ex.ParamName);
+                throw;
+            }
+        }
+
+        [TestMethod()]
+        [ExpectedException(typeof(ArgumentException))]
+        public void ShouldThrowArgumentExceptionIfEmailsCollectionIsNull()
+        {
+            try
+            {
+                _person.Emails = null;
+                var wrapper = new PersonWrapper(_person);
+            }
+            catch (ArgumentNullException ex)
+            {
+                Assert.AreEqual("Emails cannot be null", ex.ParamName);
+                throw;
+            }
+        }
+
+        [TestMethod()]
         public void ShouldSetValueOfTheUnderlyingProperty()
         {
             var wrapper = new PersonWrapper(_person);

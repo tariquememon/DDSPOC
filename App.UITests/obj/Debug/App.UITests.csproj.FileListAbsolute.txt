@@ -17,3 +17,12 @@ C:\Development\Training\DisconnectedDSPOC\App.UITests\obj\Debug\App.UITests.cspr
 C:\Development\Training\DisconnectedDSPOC\App.UITests\obj\Debug\App.UITests.csproj.CopyComplete
 C:\Development\Training\DisconnectedDSPOC\App.UITests\obj\Debug\App.UITests.dll
 C:\Development\Training\DisconnectedDSPOC\App.UITests\obj\Debug\App.UITests.pdb
+C:\Development\Training\DisconnectedDSPOC\App.UITests\bin\Debug\Autofac.dll
+C:\Development\Training\DisconnectedDSPOC\App.UITests\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Development\Training\DisconnectedDSPOC\App.UITests\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Development\Training\DisconnectedDSPOC\App.UITests\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Development\Training\DisconnectedDSPOC\App.UITests\bin\Debug\Autofac.pdb
+C:\Development\Training\DisconnectedDSPOC\App.UITests\bin\Debug\Autofac.xml
+C:\Development\Training\DisconnectedDSPOC\App.UITests\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+C:\Development\Training\DisconnectedDSPOC\App.UITests\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\Development\Training\DisconnectedDSPOC\App.UITests\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml

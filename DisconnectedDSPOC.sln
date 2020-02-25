@@ -9,7 +9,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "App.Model", "Person.Model\A
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "App.UITests", "App.UITests\App.UITests.csproj", "{DD58AE99-D263-45C6-8E0F-913FFA2ECEEB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "App.Data", "App.Data\App.Data.csproj", "{C7583100-C005-4772-B4AD-710266172840}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "App.DataAccess", "App.Data\App.DataAccess.csproj", "{C7583100-C005-4772-B4AD-710266172840}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
