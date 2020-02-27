@@ -22,7 +22,39 @@ namespace App.Data.Services
         {
             using(var ctx = _contextCreator())
             {
-                return await ctx.People.AsNoTracking().ToListAsync();
+                return await ctx.People
+                    .Include(p => p.Address)
+                    .Include(p => p.Emails)
+                    .AsNoTracking()
+                    .ToListAsync();
+            }
+        }
+
+        public async Task SaveAsync(Person person)
+        {
+            using(var ctx = _contextCreator())
+            {
+                ctx.People.Attach(person);
+                ctx.Entry(person).State = EntityState.Modified;
+                ctx.Entry(person.Address).State = EntityState.Modified;
+
+                foreach (var email in person.Emails)
+                {
+                    ctx.Entry(email).State = (email.Id == 0 ? EntityState.Added : EntityState.Modified);
+                }
+
+                var missingEmails = ctx.Emails.Where(e => e.PersonId == person.Id).AsNoTracking().ToList();
+                    
+                foreach(var missingEmail in missingEmails)
+                {
+                    if(!person.Emails.Any(e => e.Id == missingEmail.Id))
+                    {
+                        ctx.Emails.Attach(missingEmail);
+                        ctx.Entry(missingEmail).State = EntityState.Deleted;
+                    }
+                }
+
+                await ctx.SaveChangesAsync();
             }
         }
     }

@@ -59,6 +59,18 @@
     <Compile Include="Migrations\202002250318388_InitialDatabase1.designer.cs">
       <DependentUpon>202002250318388_InitialDatabase1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202002260158110_UpdatedSeedMethod.cs" />
+    <Compile Include="Migrations\202002260158110_UpdatedSeedMethod.designer.cs">
+      <DependentUpon>202002260158110_UpdatedSeedMethod.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202002260337328_EmailModelValidation.cs" />
+    <Compile Include="Migrations\202002260337328_EmailModelValidation.designer.cs">
+      <DependentUpon>202002260337328_EmailModelValidation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202002260904341_AddedTablesToContext.cs" />
+    <Compile Include="Migrations\202002260904341_AddedTablesToContext.designer.cs">
+      <DependentUpon>202002260904341_AddedTablesToContext.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="PersonManagerDbContext.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -82,6 +94,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202002250318388_InitialDatabase1.resx">
       <DependentUpon>202002250318388_InitialDatabase1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202002260158110_UpdatedSeedMethod.resx">
+      <DependentUpon>202002260158110_UpdatedSeedMethod.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202002260337328_EmailModelValidation.resx">
+      <DependentUpon>202002260337328_EmailModelValidation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202002260904341_AddedTablesToContext.resx">
+      <DependentUpon>202002260904341_AddedTablesToContext.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

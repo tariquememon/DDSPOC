@@ -42,6 +42,8 @@ namespace WPF.UI.Wrapper
             set { SetValue(value); }
         }
 
+        public string NameOriginalValue { get; }
+
         public AddressWrapper Address { get; private set; }
         public ObservableCollection<EmailWrapper> Emails { get; private set; }
     }

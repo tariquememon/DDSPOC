@@ -16,6 +16,9 @@ namespace App.Data
         }
 
         public DbSet<Person> People { get; set; }
+        public DbSet<Email> Emails { get; set; }
+        public DbSet<Address> Addresses { get; set; }
+
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {

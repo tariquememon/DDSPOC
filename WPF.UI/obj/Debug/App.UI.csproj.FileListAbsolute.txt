@@ -32,3 +32,8 @@ C:\Development\Training\DisconnectedDSPOC\WPF.UI\bin\Debug\App.Data.dll.config
 C:\Development\Training\DisconnectedDSPOC\WPF.UI\bin\Debug\EntityFramework.xml
 C:\Development\Training\DisconnectedDSPOC\WPF.UI\bin\Debug\EntityFramework.SqlServer.dll
 C:\Development\Training\DisconnectedDSPOC\WPF.UI\bin\Debug\EntityFramework.SqlServer.xml
+C:\Development\Training\DisconnectedDSPOC\WPF.UI\bin\Debug\Prism.dll
+C:\Development\Training\DisconnectedDSPOC\WPF.UI\bin\Debug\System.ValueTuple.dll
+C:\Development\Training\DisconnectedDSPOC\WPF.UI\bin\Debug\Prism.pdb
+C:\Development\Training\DisconnectedDSPOC\WPF.UI\bin\Debug\Prism.xml
+C:\Development\Training\DisconnectedDSPOC\WPF.UI\bin\Debug\System.ValueTuple.xml

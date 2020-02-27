@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WPF.UI"
         mc:Ignorable="d"
-        Title="POC - Disconnected Data Source" Height="600" Width="800" FontSize="20">
+        Title="POC - Disconnected Data Source" Height="800" Width="800" FontSize="20">
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="200"/>
@@ -29,6 +29,7 @@
                 <RowDefinition Height="Auto"/>
                 <RowDefinition Height="Auto"/>
                 <RowDefinition Height="*"/>
+                <RowDefinition Height="Auto"/>
             </Grid.RowDefinitions>
 
             <Label Content="Name" Margin="10 10 10 0" Grid.Row="0"/>
@@ -50,6 +51,27 @@
             <Label Content="Post Code" Margin="10 10 10 0" Grid.Row="8"/>
             <TextBox Grid.Row="9" Text="{Binding SelectedPerson.Address.PostCode, 
                 Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" Margin="10 0 10 10"/>
+
+            <DockPanel Grid.Row="10" Margin="10">
+                <StackPanel DockPanel.Dock="Right">
+                    <Button Content="Add" Width="125" Margin="10"
+                            Command="{Binding AddEmailCommand}"/>
+                    <Button Content="Remove" Width="125" Margin="10"
+                            Command="{Binding RemoveEmailCommand}"/>
+                </StackPanel>
+                <DataGrid ItemsSource="{Binding SelectedPerson.Emails}"
+                          SelectedItem="{Binding SelectedEmail, Mode=TwoWay}"
+                          AutoGenerateColumns="False" RowHeaderWidth="0">
+                    <DataGrid.Columns>
+                        <DataGridTextColumn Header="Emails" Width="*"
+                                            Binding="{Binding EmailAddress, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"/>
+                    </DataGrid.Columns>
+                </DataGrid>
+            </DockPanel>
+
+            <StackPanel Grid.Row="11" Orientation="Horizontal">
+                <Button Content="Save" Width="125" Margin="10" Command="{Binding SaveCommand}"/>
+            </StackPanel>
         </Grid>
     </Grid>
 </Window>

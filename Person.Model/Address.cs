@@ -1,4 +1,6 @@
-﻿namespace App.Model
+﻿using System.Collections.Generic;
+
+namespace App.Model
 {
     public class Address
     {
@@ -7,5 +9,6 @@
         public string StreetName { get; set; }
         public string State { get; set; }
         public int PostCode { get; set; }
+        public List<Person> People { get; set; }
     }
 }

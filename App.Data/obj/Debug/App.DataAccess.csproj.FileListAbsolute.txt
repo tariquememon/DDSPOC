@@ -15,3 +15,6 @@ C:\Development\Training\DisconnectedDSPOC\App.Data\obj\Debug\App.Data.pdb
 C:\Development\Training\DisconnectedDSPOC\App.Data\obj\Debug\App.Data.Migrations.InitialDatabase.resources
 C:\Development\Training\DisconnectedDSPOC\App.Data\obj\Debug\App.DataAccess.csproj.GenerateResource.cache
 C:\Development\Training\DisconnectedDSPOC\App.Data\obj\Debug\App.Data.Migrations.InitialDatabase1.resources
+C:\Development\Training\DisconnectedDSPOC\App.Data\obj\Debug\App.Data.Migrations.UpdatedSeedMethod.resources
+C:\Development\Training\DisconnectedDSPOC\App.Data\obj\Debug\App.Data.Migrations.EmailModelValidation.resources
+C:\Development\Training\DisconnectedDSPOC\App.Data\obj\Debug\App.Data.Migrations.AddedTablesToContext.resources

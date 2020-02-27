@@ -10,5 +10,6 @@ namespace WPF.UI.Data
     public interface IPeopleDataService
     {
         Task<IEnumerable<Person>> GetAllAsync();
+        Task SaveAsync(Person person);
     }
 }
