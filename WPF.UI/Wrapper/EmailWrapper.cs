@@ -24,5 +24,8 @@ namespace WPF.UI.Wrapper
             get { return GetValue<string>(); }
             set { SetValue(value); }
         }
+
+        public string EmailAddressOriginalValue => GetOriginalValue<string>(nameof(EmailAddress));
+        public bool EmailAddressIsChanged => GetIsChanged(nameof(EmailAddress));
     }
 }

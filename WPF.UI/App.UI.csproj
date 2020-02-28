@@ -84,10 +84,12 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Converters\DoNothingConverter.cs" />
     <Compile Include="Startup\Bootstrapper.cs" />
     <Compile Include="ViewModel\MainViewModel.cs" />
     <Compile Include="ViewModel\Observable.cs" />
     <Compile Include="Wrapper\AddressWrapper.cs" />
+    <Compile Include="Wrapper\ChangeTrackingCollection.cs" />
     <Compile Include="Wrapper\EmailWrapper.cs" />
     <Compile Include="Wrapper\ModelWrapper.cs" />
     <Compile Include="Wrapper\PersonWrapper.cs" />

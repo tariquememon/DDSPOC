@@ -43,7 +43,11 @@ namespace App.Data.Services
                     ctx.Entry(email).State = (email.Id == 0 ? EntityState.Added : EntityState.Modified);
                 }
 
-                var missingEmails = ctx.Emails.Where(e => e.PersonId == person.Id).AsNoTracking().ToList();
+
+                //TODO: replace with Linq expression
+                var missingEmails = ctx.Emails.Where(e => e.PersonId == person.Id)
+                    .AsNoTracking()
+                    .ToList();
                     
                 foreach(var missingEmail in missingEmails)
                 {

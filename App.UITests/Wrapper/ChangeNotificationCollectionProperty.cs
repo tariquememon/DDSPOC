@@ -57,6 +57,14 @@ namespace App.UITests.Wrapper
             CheckIfModelEmailsCollectionIsInSync(wrapper);
         }
 
+        [TestMethod]
+        public void ShouldBeInSyncAfterClearingEmails()
+        {
+            var wrapper = new PersonWrapper(_person);
+            wrapper.Emails.Clear();
+            CheckIfModelEmailsCollectionIsInSync(wrapper);
+        }
+
 
         private void CheckIfModelEmailsCollectionIsInSync(PersonWrapper wrapper)
         {

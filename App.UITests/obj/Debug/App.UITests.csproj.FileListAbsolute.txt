@@ -26,3 +26,14 @@ C:\Development\Training\DisconnectedDSPOC\App.UITests\bin\Debug\Autofac.xml
 C:\Development\Training\DisconnectedDSPOC\App.UITests\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
 C:\Development\Training\DisconnectedDSPOC\App.UITests\bin\Debug\System.Threading.Tasks.Extensions.xml
 C:\Development\Training\DisconnectedDSPOC\App.UITests\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Development\Training\DisconnectedDSPOC\App.UITests\bin\Debug\App.UITests.dll.config
+C:\Development\Training\DisconnectedDSPOC\App.UITests\bin\Debug\App.Data.dll
+C:\Development\Training\DisconnectedDSPOC\App.UITests\bin\Debug\Prism.dll
+C:\Development\Training\DisconnectedDSPOC\App.UITests\bin\Debug\System.ValueTuple.dll
+C:\Development\Training\DisconnectedDSPOC\App.UITests\bin\Debug\EntityFramework.dll
+C:\Development\Training\DisconnectedDSPOC\App.UITests\bin\Debug\App.Data.pdb
+C:\Development\Training\DisconnectedDSPOC\App.UITests\bin\Debug\App.Data.dll.config
+C:\Development\Training\DisconnectedDSPOC\App.UITests\bin\Debug\Prism.pdb
+C:\Development\Training\DisconnectedDSPOC\App.UITests\bin\Debug\Prism.xml
+C:\Development\Training\DisconnectedDSPOC\App.UITests\bin\Debug\System.ValueTuple.xml
+C:\Development\Training\DisconnectedDSPOC\App.UITests\bin\Debug\EntityFramework.xml

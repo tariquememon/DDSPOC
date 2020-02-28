@@ -19,6 +19,7 @@ namespace WPF.UI.Wrapper
                 throw new ArgumentException("Address cannot be null");
             }
             Address = new AddressWrapper(model.Address);
+            RegisterComplex(Address);
         }
         void InitializeCollectionProperties(Person model)
         {
@@ -26,7 +27,7 @@ namespace WPF.UI.Wrapper
             {
                 throw new ArgumentException("Emails cannot be null");
             }
-            Emails = new ObservableCollection<EmailWrapper>(model.Emails.Select(e => new EmailWrapper(e)));
+            Emails = new ChangeTrackingCollection<EmailWrapper>(model.Emails.Select(e => new EmailWrapper(e)));
             RegisterCollection(Emails, model.Emails);
         }
 
@@ -42,9 +43,10 @@ namespace WPF.UI.Wrapper
             set { SetValue(value); }
         }
 
-        public string NameOriginalValue { get; }
-
+        public string NameOriginalValue => GetOriginalValue<string>(nameof(Name));            
+        public bool NameIsChanged => GetIsChanged(nameof(Name));
+            
         public AddressWrapper Address { get; private set; }
-        public ObservableCollection<EmailWrapper> Emails { get; private set; }
+        public ChangeTrackingCollection<EmailWrapper> Emails { get; private set; }
     }
 }

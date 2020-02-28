@@ -1,6 +1,7 @@
 ﻿using App.Model;
 using Prism.Commands;
 using System;
+using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Threading.Tasks;
 using System.Windows.Input;
@@ -20,6 +21,7 @@ namespace WPF.UI.ViewModel
             _peopleDataService = peopleDataService;
 
             SaveCommand = new DelegateCommand(OnSaveExecute, OnSaveCanExecute);
+            ResetCommand = new DelegateCommand(OnResetExecute, OnResetCanExecute);
             AddEmailCommand = new DelegateCommand(OnAddEmailExecute);
             RemoveEmailCommand = new DelegateCommand(OnRemoveEmailExecute, OnRemoveEmailCanExecute);
 
@@ -46,12 +48,15 @@ namespace WPF.UI.ViewModel
 
         bool OnSaveCanExecute()
         {
-            return true;
+            if (SelectedPerson == null) return false;
+
+            return SelectedPerson.IsChanged;
         }
 
         async void OnSaveExecute()
         {
             await _peopleDataService.SaveAsync(SelectedPerson.Model);
+            SelectedPerson.AcceptChanges();
         }
 
         public async Task LoadAsync()
@@ -68,6 +73,7 @@ namespace WPF.UI.ViewModel
         public ICommand AddEmailCommand { get; set; }
         public ICommand RemoveEmailCommand { get; set; }
         public ICommand SaveCommand { get; set; }
+        public ICommand ResetCommand { get; set; }
 
         public EmailWrapper SelectedEmail
         {
@@ -86,10 +92,41 @@ namespace WPF.UI.ViewModel
             set
             {
                 _selectedPerson = value;
-                OnPropertyChanged();                
+                OnPropertyChanged();
+                OnPropertyChanged(nameof(ShowDetail));
+
+                _selectedPerson.PropertyChanged += (s, e) =>
+                {
+                    if (e.PropertyName == nameof(_selectedPerson.IsChanged))
+                    {
+                        InvalidateCommands();
+                    }
+                };
             }
         }
 
+        private void InvalidateCommands()
+        {
+            ((DelegateCommand)SaveCommand).RaiseCanExecuteChanged();
+            ((DelegateCommand)ResetCommand).RaiseCanExecuteChanged();
+            ((DelegateCommand)AddEmailCommand).RaiseCanExecuteChanged();
+            ((DelegateCommand)RemoveEmailCommand).RaiseCanExecuteChanged();
+        }
+        
+        void OnResetExecute()
+        {
+            SelectedPerson.RejectChanges();
+        }
+
+        bool OnResetCanExecute()
+        {
+            if (SelectedPerson == null) return false;
+
+            return SelectedPerson.IsChanged;
+        }
+
+        public bool ShowDetail => SelectedPerson != null;
+        
         public ObservableCollection<PersonWrapper> People { get; set; }
         public ObservableCollection<EmailWrapper> Emails { get; set; }
     }
