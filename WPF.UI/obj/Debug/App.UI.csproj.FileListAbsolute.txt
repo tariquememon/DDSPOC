@@ -39,3 +39,4 @@ C:\Development\Training\DisconnectedDSPOC\WPF.UI\bin\Debug\Prism.xml
 C:\Development\Training\DisconnectedDSPOC\WPF.UI\bin\Debug\System.ValueTuple.xml
 C:\Development\Training\DisconnectedDSPOC\WPF.UI\obj\Debug\App.baml
 C:\Development\Training\DisconnectedDSPOC\WPF.UI\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Development\Training\DisconnectedDSPOC\WPF.UI\obj\Debug\WPF.UI_Content.g.cs

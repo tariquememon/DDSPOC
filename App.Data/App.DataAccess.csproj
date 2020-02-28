@@ -83,12 +83,6 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Person.Model\App.Model.csproj">
-      <Project>{BF7EABA5-455D-45F6-A35B-6CF41DD4BC1D}</Project>
-      <Name>App.Model</Name>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
     <EmbeddedResource Include="Migrations\202002250301092_InitialDatabase.resx">
       <DependentUpon>202002250301092_InitialDatabase.cs</DependentUpon>
     </EmbeddedResource>
@@ -104,6 +98,12 @@
     <EmbeddedResource Include="Migrations\202002260904341_AddedTablesToContext.resx">
       <DependentUpon>202002260904341_AddedTablesToContext.cs</DependentUpon>
     </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Person.Model\App.Model.csproj">
+      <Project>{bf7eaba5-455d-45f6-a35b-6cf41dd4bc1d}</Project>
+      <Name>App.Model</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

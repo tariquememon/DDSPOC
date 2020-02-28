@@ -1,0 +1,38 @@
+﻿<#@ template debug="false" hostspecific="true" language="C#" #>
+<#@ assembly name="System.Core" #>
+<#@ assembly name="$(SolutionDir)\Person.Model\bin\Debug\Person.Model.dll" #>
+<#@ import namespace="System.Linq" #>
+<#@ import namespace="System.Text" #>
+<#@ import namespace="System.IO" #>
+<#@ import namespace="System.Collections.Generic" #>
+<#@ import namespace="App.Model" #>
+<#@ output extension=".cs" #>
+<#
+	foreach(var modelType in GetModelTypes()) 
+	{
+#>
+		public class <#=modelType.Name#>Wrapper : ModelWrapper<<#=modelType.Name#>>
+		{
+			
+		}
+<#
+		SaveGeneratedCodeAsFile(modelType.Name + "Wrapper.g.cs");
+    }
+#>
+
+<#+
+	private IEnumerable<Type> GetModelTypes()
+    {
+		return typeof(Person).Assembly.GetTypes();
+    }
+
+	private void SaveGeneratedCodeAsFile(string fileName)
+    {
+		string dir = Path.GetDirectoryName(Host.TemplateFile);
+
+		string outputFilePath = Path.Combine(dir, fileName);
+		File.WriteAllText(outputFilePath, GenerationEnvironment.ToString());
+
+		GenerationEnvironment.Clear();
+    }
+#>
