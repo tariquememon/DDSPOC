@@ -18,3 +18,4 @@ C:\Development\Training\DisconnectedDSPOC\App.Data\obj\Debug\App.Data.Migrations
 C:\Development\Training\DisconnectedDSPOC\App.Data\obj\Debug\App.Data.Migrations.UpdatedSeedMethod.resources
 C:\Development\Training\DisconnectedDSPOC\App.Data\obj\Debug\App.Data.Migrations.EmailModelValidation.resources
 C:\Development\Training\DisconnectedDSPOC\App.Data\obj\Debug\App.Data.Migrations.AddedTablesToContext.resources
+C:\Development\Training\DisconnectedDSPOC\App.Data\obj\Debug\App.Data.Migrations.updatedmodel.resources

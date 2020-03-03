@@ -9,6 +9,6 @@ namespace App.Model
         public string StreetName { get; set; }
         public string State { get; set; }
         public int PostCode { get; set; }
-        public List<Person> People { get; set; }
+        //public List<Person> People { get; set; }
     }
 }

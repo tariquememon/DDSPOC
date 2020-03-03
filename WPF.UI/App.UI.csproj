@@ -90,11 +90,19 @@
     <Compile Include="ViewModel\Observable.cs" />
     <Compile Include="Wrapper\Base\ChangeTrackingCollection.cs" />
     <Compile Include="Wrapper\Base\ModelWrapper.cs" />
+    <Compile Include="Wrapper\Generated\AddressWrapper.g.cs" />
+    <Compile Include="Wrapper\Generated\EmailWrapper.g.cs" />
     <Compile Include="Wrapper\Generated\GenerateModelWrappers.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>GenerateModelWrappers.tt</DependentUpon>
     </Compile>
+    <Compile Include="Wrapper\Generated\GenerateModelWrappers1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>GenerateModelWrappers.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Wrapper\Generated\PersonWrapper.g.cs" />
     <Page Include="View\MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -148,7 +156,7 @@
   <ItemGroup>
     <Content Include="Wrapper\Generated\GenerateModelWrappers.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <LastGenOutput>GenerateModelWrappers.cs</LastGenOutput>
+      <LastGenOutput>GenerateModelWrappers1.cs</LastGenOutput>
     </Content>
   </ItemGroup>
   <ItemGroup>

@@ -71,6 +71,10 @@
     <Compile Include="Migrations\202002260904341_AddedTablesToContext.designer.cs">
       <DependentUpon>202002260904341_AddedTablesToContext.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202003030443150_updatedmodel.cs" />
+    <Compile Include="Migrations\202003030443150_updatedmodel.designer.cs">
+      <DependentUpon>202003030443150_updatedmodel.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="PersonManagerDbContext.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -97,6 +101,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202002260904341_AddedTablesToContext.resx">
       <DependentUpon>202002260904341_AddedTablesToContext.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202003030443150_updatedmodel.resx">
+      <DependentUpon>202003030443150_updatedmodel.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
